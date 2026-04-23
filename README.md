@@ -11,11 +11,12 @@ It includes:
 
 ## Files
 
-- `WindowHider-UI.ps1`: main UI app
+- `WindowHider-UI.ps1`: main UI entry point
 - `Hide-ConfiguredWindows.ps1`: original hotkey-only version
 - `window-hider.config.json`: default configuration
 - `RUN_WINDOW_HIDER.vbs`: double-click launcher
 - `start-window-hider.cmd`: visible launcher for debugging
+- `src/WindowHider-UI.part*.ps1`: split UI source files loaded by the entry point
 
 ## Features
 
@@ -58,3 +59,4 @@ If two Chrome windows are open and you want one of them to stay visible:
 - This project does not require Python.
 - The tray icon appears as a small `H`.
 - Closing the app restores any windows hidden by the tool.
+- The UI source is split into `src` parts so the repo stays easy to share; `WindowHider-UI.ps1` loads them automatically.

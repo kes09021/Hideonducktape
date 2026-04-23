@@ -1,0 +1,10 @@
+{
+  "hotkey": "Alt+`",
+  "exitHotkey": "Ctrl+Alt+Shift+Q",
+  "targets": [
+    "chrome.exe",
+    "notepad.exe"
+  ],
+  "windowRules": [],
+  "logToConsole": true
+}
